@@ -6,6 +6,7 @@ import { Button } from './Button'
 import { Description } from './Description'
 import { DogImage } from './DogImage'
 import { Header } from "./header"
+import { BreedsSelect } from './BreedsSelect'
 
 const apiUrl = "https://dog.ceo/api/breeds/image/random"
 const initialSrc = "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
@@ -29,6 +30,7 @@ export const App = () => {
       <div className="flex">
         <Description />
         <div className="flex-col">
+          <BreedsSelect />
           <DogImage url={dogImageSrc} />
           <Button onClick={getRandomDogImage}>変更</Button>
         </div>
