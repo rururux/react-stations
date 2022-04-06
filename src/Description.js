@@ -6,5 +6,3 @@ export const Description = () => {
     <div className="description">犬の画像を表示するサイトです。</div>
   )
 }
-
-export default Description
