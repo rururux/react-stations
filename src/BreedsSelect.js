@@ -2,16 +2,16 @@
 import * as React from "react"
 
 // eslint-disable-next-line
-export const BreedsSelect = ({ breedsList }) => {
+export const BreedsSelect = ({ breeds, selectedBreed, onChange }) => {
 
   return (
     <div className="w-full">
       <label>
         {"犬種: "}
-        <select disabled={breedsList == null}>
-          {breedsList != null && (
+        <select value={selectedBreed} disabled={breeds == null} onChange={onChange}>
+          {breeds != null && (
             // eslint-disable-next-line
-            breedsList.map(breed => (
+            breeds.map(breed => (
               <option value={breed} key={breed}>{breed}</option>
             ))
           )}
