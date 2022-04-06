@@ -2,8 +2,10 @@
 
 import * as React from 'react'
 import './App.css'
-import Description from './Description'
-import Header from "./header"
+import { Button } from './Button'
+import { Description } from './Description'
+import { DogImage } from './DogImage'
+import { Header } from "./header"
 
 const apiUrl = "https://dog.ceo/api/breeds/image/random"
 const initialSrc = "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_6057.jpg"
@@ -24,7 +26,13 @@ export const App = () => {
   return (
     <div className="px-12">
       <Header />
-      <Description dogImageSrc={dogImageSrc} getRandomDogImage={getRandomDogImage} />
+      <div className="flex">
+        <Description />
+        <div className="flex-col">
+          <DogImage url={dogImageSrc} />
+          <Button onClick={getRandomDogImage}>変更</Button>
+        </div>
+      </div>
       <hr className="mt-4" />
     </div>
   )
