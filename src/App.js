@@ -30,12 +30,12 @@ export const App = () => {
       <div className="flex">
         <Description />
         <div className="flex-col">
-          <DogListContainer/>
           <DogImage url={dogImageSrc} />
           <Button onClick={getRandomDogImage}>変更</Button>
         </div>
       </div>
-      <hr className="mt-4" />
+      <hr className="my-4" />
+      <DogListContainer/>
     </div>
   )
 }
