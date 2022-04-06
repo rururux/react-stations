@@ -54,6 +54,7 @@ body {
   color: white;
   background-color: #007BFF;
   cursor: pointer;
+  outline-offset: 3px;
 }
 
 .select {
