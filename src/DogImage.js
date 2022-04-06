@@ -2,9 +2,9 @@
 import * as React from "react"
 
 // eslint-disable-next-line
-const DogImage = ({ src }) => {
+const DogImage = ({ url }) => {
   return (
-    <img className="dog-image" src={src} alt="かわいい犬の画像" />
+    <img className="dog-image" src={url} alt="かわいい犬の画像" />
   )
 }
 
