@@ -33,7 +33,7 @@ export const App = () => {
           <Button onClick={getRandomDogImage}>変更</Button>
         </div>
       </div>
-      <hr />
+      <hr className="mt-4" />
     </div>
   )
 }

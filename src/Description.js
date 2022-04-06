@@ -1,6 +1,5 @@
 // DO NOT DELETE
 import * as React from "react";
-import "../styles/description.css"
 
 const Description = () => {
   return (

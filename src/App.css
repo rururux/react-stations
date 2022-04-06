@@ -21,6 +21,32 @@ body {
   row-gap: 1rem;
 }
 
-hr {
+.mt-4 {
   margin: 1rem 0 0;
+}
+
+.header {
+  height: 64px;
+  text-align: center;
+}
+
+.description {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+.dog-image {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.button {
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  padding-block: 0.5rem;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
 }
